@@ -8,6 +8,7 @@ var favoriteWords = [
 var numberWords = [1: "one"]
 
 var definition = favoriteWords["rigmarole"]
+//definition in this case is an optional string b/c can't guarantee that the key exists within the dictionary!!
 
 var nonexistentDefinition = favoriteWords["strategery"]
 
@@ -26,5 +27,7 @@ if let definition = nonexistentDefinition {
 favoriteWords["strategery"] = "strategy"
 definition = favoriteWords["strategery"]
 
+
+//to remove a key from a dictionary, just set its value to nil! 
 favoriteWords["strategery"] = nil
 print(favoriteWords)
